@@ -1,6 +1,6 @@
-from FunctionGeneral import *
-from FuctionDatabase import *
-from FunctionSendMail import *
+from Functions.FunctionGeneral import *
+from Functions.FuctionDatabase import *
+from Functions.FunctionSendMail import *
 
 #网址
 home='https://tianchi.aliyun.com'#主页
@@ -70,6 +70,6 @@ while True:
     #写入数据库
             updata_database(database_name,url_sub,head,body,send_time)
 
-file=open('Log.txt','a')
+file=open('logs\\log.txt','a')
 file.write(home+'\n')
 file.close()

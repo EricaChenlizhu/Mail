@@ -39,9 +39,9 @@ def send_mail(head,body,code='utf-8'):
 
 #write sendLog
     try:
-        file=open('LogSend.txt','a')
+        file=open('logs\\logSend.txt','a')
     except:
-        file=open('LogSent.txt','r')
+        file=open('logs\\logSend.txt','r')
     file.write(time.strftime('%y-%m-%d,%H:%M:%S',time.localtime())+'\n')
     file.close()
 

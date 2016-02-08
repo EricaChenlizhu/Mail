@@ -1,7 +1,6 @@
 #my ignore
 PersonalInformation.py
-Log.txt
-LogSend.txt
+logs
 
 #python ignore
 #
