@@ -7,9 +7,6 @@ def send_gmail(head,body,code='utf-8',To='erica_chenlizhu@163.com'):
     from email.mime.text import MIMEText
     import time
 
-    GMAIL_USERNAME='ericachenlizhu@gmail.com'
-    GMAIL_PASSWORD='304989623'
-
 # The below code never changes, though obviously those variables need values.
     session = smtplib.SMTP('smtp.gmail.com', 587)
     session.ehlo()
