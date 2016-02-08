@@ -38,14 +38,21 @@ def send_mail(head,body,code='utf-8'):
         s.sendmail(sender, To, msg.as_string())  # 发送邮件
 
 #write sendLog
+def sent_log(address):
     try:
-        file=open('logs\\logSend.txt','a')
+        file=open('%s\\logSend.txt'%address,'a')
     except:
-        file=open('logs\\logSend.txt','r')
+        file=open('%s\\logSend.txt'%address,'r')
     file.write(time.strftime('%y-%m-%d,%H:%M:%S',time.localtime())+'\n')
     file.close()
 
+
 if __name__ == '__main__':
     head='test'
-    body='1'
+
+    from urllib import request
+    url='http://www.liaoxuefeng.com/feed'
+    conn=request.urlopen(url)
+    page=conn.read().decode()
+    body=page
     send_mail(head,body)

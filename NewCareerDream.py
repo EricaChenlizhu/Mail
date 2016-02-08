@@ -72,6 +72,7 @@ while True:
     #发送邮件
             send_time=time.strftime('%y-%m-%d,%H:%M:%S',time.localtime())
             send_mail(head,body)
+            sent_log('logs')
     #写入数据库
             updata_database(database_name,url_sub,head,body,send_time)
 
