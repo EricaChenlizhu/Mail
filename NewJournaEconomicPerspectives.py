@@ -1,5 +1,5 @@
 from Functions.FunctionGeneral import *
-from Functions.FuctionDatabase import *
+from Functions.FunctionDatabase import *
 from Functions.FunctionSendMail import *
 
 
